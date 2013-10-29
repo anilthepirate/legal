@@ -1,0 +1,874 @@
+
+<!DOCTYPE html>
+<html class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+  <title>Desktime: Shared Spaces and Coworking</title>
+  <meta name="description" content="Find shared work and coworking spaces booked by the day or month and software to manage your space">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link href="https://desktime-production-assets.s3.amazonaws.com/assets/marketing-8e7e9085ba687e870218549b96e21c40.css" media="screen" rel="stylesheet" type="text/css" />
+  <link href="//fast.fonts.net/cssapi/cbfeffa8-44fd-46fc-81d5-c26b87cce6c6.css" media="screen" rel="stylesheet" type="text/css" />
+  
+
+  <meta content="authenticity_token" name="csrf-param" />
+<meta content="gbnU/hF0Cd6oTrCRRploqIHMYqrbRJGRSBLa0gSJL3U=" name="csrf-token" />
+  <script src="https://desktime-production-assets.s3.amazonaws.com/assets/modernizr-30e457852d4d48ab60f46d512e51277e.js" type="text/javascript"></script>
+</head>
+<body class="" data-controller="marketing" data-action="index">
+
+  <!--[if lt IE 9]>
+  
+  <script src="https://desktime-production-assets.s3.amazonaws.com/assets/modernizr-html5shiv-bb563d5425f94a772ed0bf36c6a2281b.js" type="text/javascript"></script>
+  <link href="https://desktime-production-assets.s3.amazonaws.com/assets/unsupported-browser-d0575943bc22f203f51b309ef341ac2b.css" media="screen" rel="stylesheet" type="text/css" />
+
+  <div class="unsupported-browser">
+    
+    <div class="unsupported-browser__header">
+      <h1 class="unsupported-browser__header__desktime">Desktime</h1>
+    </div>
+    
+    <h1 class="unsupported-browser__message-heading">Your browser needs to be updated.</h1>
+    <h1 class="unsupported-browser__message-body">Download one of these great modern browsers supported by Desktime.</h1>
+    
+    <a href="http://www.google.com/chrome" class="supported-browsers__option supported-browsers__option--chrome">
+      <div class="supported-browsers__option__icon"></div>
+      <p class="supported-browsers__option__name">Google Chrome</p>
+    </a>
+    <a href="http://www.firefox.com/" class="supported-browsers__option supported-browsers__option--firefox">
+      <div class="supported-browsers__option__icon"></div>
+      <p class="supported-browsers__option__name">Firefox</p>
+    </a>
+    <a href="http://www.apple.com/safari/" class="supported-browsers__option supported-browsers__option--safari">
+      <div class="supported-browsers__option__icon"></div>
+      <p class="supported-browsers__option__name">Safari</p>
+    </a>
+    <a href="http://www.opera.com/" class="supported-browsers__option supported-browsers__option--opera">
+      <div class="supported-browsers__option__icon"></div>
+      <p class="supported-browsers__option__name">Opera</p>
+    </a>
+    <a href="http://windows.microsoft.com/ie" class="supported-browsers__option supported-browsers__option--ie">
+      <div class="supported-browsers__option__icon"></div>
+      <p class="supported-browsers__option__name">Internet Explorer 10</p>
+    </a>
+  </div>
+
+<![endif]-->
+
+  
+  
+
+  <header class="l-app-header l-app-header--non-space l-app-header--non-space--tall l-app-header--non-space--marketing js-app-header">
+    
+    <div class="l-app-header__search-and-account">
+      
+  <nav class="nav-account nav-account--sign-in nav-account--non-space nav-account--marketing">
+    <a href="/sign_in" class="nav-account__switcher">Sign In</a>
+  </nav>
+
+    
+      <a href="/directory" class="link-header link-header--alt">Directory</a>
+      <a href="/faq" class="link-header link-header--alt">FAQ</a>
+      <a href="/#request-demo" class="link-header link-header--alt is-calledout js-scroll-link">Request a Demo</a>
+    </div>
+
+    <div class="desktime-heading">
+      <h1 class="desktime-logo desktime-logo--blue"><a href="/" class="js-marketing-scroll-top">Desktime</a></h1>
+    </div>
+  </header>
+
+  
+<header id="intro" class="l-marketing-intro-header js-intro" data-url-path="/">
+  <div class="js-intro-video" data-video-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/marketing-intro-f76be4067208b0c548862a2303e014aa.mp4" data-alt-video-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/marketing-intro-0262a349eae4d2e1cdee58a6c7013da2.webm" data-poster-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/marketing-intro-d26f4d0e135fb75e83441c9d9de1907d.jpg"></div>
+  
+  <div class="marketing-audience-intro marketing-audience-intro--directory">
+    <h1 class="marketing-audience-intro__heading">Find the perfect shared workspace.</h1>
+    <p class="marketing-audience-intro__description">Search the <a href="/directory">Desktime Directory</a> for a great place to work anywhere in the world.</p>
+    <form action="/directory" class="nav-map nav-map--marketing js-nav-map">
+  <div class="nav-map__search nav-map__search--marketing js-nav-map-search">
+    <input autocomplete="off" class="nav-map__search__input nav-map__search__input--marketing js-nav-map-search-input" id="location" name="location" placeholder="Search by city or address..." type="text" value="Chicago, IL" />
+
+    <input class="js-latitude" id="latitude" name="latitude" type="hidden" />
+    <input class="js-longitude" id="longitude" name="longitude" type="hidden" />
+  </div>
+
+  <button type="submit" class="nav-map__search__submit nav-map__search__submit--marketing">Search</button>
+</form>
+
+
+  </div>
+
+  <div class="marketing-audience-intro marketing-audience-intro--manage">
+    <h1 class="marketing-audience-intro__heading">Take control of your coworking space.</h1>
+    <p class="marketing-audience-intro__description">Accept payments, book your space, and build a community with a single web-based app.</p>
+    <a href="#request-demo" class="marketing-button-large js-scroll-link">Request a Demo</a>
+  </div>
+</header>
+
+
+<section id="features" class="l-marketing-feature-briefs" data-url-path="features">
+  <div class="marketing-feature-brief">
+    <a href="#payments" class="marketing-feature-brief__graphic js-scroll-link"><span class="marketing-feature-brief__graphic__inner marketing-feature-brief__graphic__inner--payments">Payments</span></a>
+    <h2 class="marketing-feature-brief__heading"><a href="#payments" class="js-scroll-link">Effortless integrated payments.</a></h2>
+    <p class="marketing-feature-brief__description">There’s no easier way to accept recurring or one-time credit card payments for your space. And it takes minutes to set up.</p>
+  </div>
+  <div class="marketing-feature-brief">
+    <a href="#booking" class="marketing-feature-brief__graphic js-scroll-link"><span class="marketing-feature-brief__graphic__inner marketing-feature-brief__graphic__inner--booking">Booking</span></a>
+    <h2 class="marketing-feature-brief__heading"><a href="#booking" class="js-scroll-link">Track bookings and resources.</a></h2>
+    <p class="marketing-feature-brief__description">With a booking system designed specifically for shared spaces, you’ll always know who’s coming, who’s going, and what they’re using.</p>
+  </div>
+  <div class="marketing-feature-brief">
+    <a href="#members" class="marketing-feature-brief__graphic js-scroll-link"><span class="marketing-feature-brief__graphic__inner marketing-feature-brief__graphic__inner--members">Members</span></a>
+    <h2 class="marketing-feature-brief__heading"><a href="#members" class="js-scroll-link">The best member experience.</a></h2>
+    <p class="marketing-feature-brief__description">Desktime’s Member Profiles help your members connect, and a full payment and booking history give them control.</p>
+  </div>
+  <div class="marketing-feature-brief">
+    <a href="#directory" class="marketing-feature-brief__graphic js-scroll-link"><span class="marketing-feature-brief__graphic__inner marketing-feature-brief__graphic__inner--directory">Directory</span></a>
+    <h2 class="marketing-feature-brief__heading"><a href="#directory" class="js-scroll-link">Promote your space.</a></h2>
+    <p class="marketing-feature-brief__description">Keep your space close to capacity with a listing in the Desktime Directory. It’s completely free, and fully-integrated into Desktime.</p>
+  </div>
+</section>
+
+
+<div class="l-marketing-features">
+  <section id="payments" class="l-marketing-feature l-marketing-payments js-feature js-feature-payments" data-url-path="features/payments">
+
+  <nav class="marketing-feature-nav">
+    <a href="#payments" class="marketing-feature-nav__item is-current js-scroll-link"><span class="marketing-feature-nav__item__inner">Payments</span></a>
+    <a href="#booking" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Booking</span></a>
+    <a href="#members" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Members</span></a>
+    <a href="#directory" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Directory</span></a>
+  </nav>
+
+  <div class="l-marketing-feature__frame">
+    <div class="l-marketing-payments__left">
+      <h1 class="marketing-feature-heading marketing-feature-heading--white marketing-feature-heading--large">
+        Hassle-free Payments
+      </h1>
+      <div class="marketing-feature-bubble">
+        <div class="marketing-feature-bubble__contents">
+          <h2 class="marketing-feature-bubble__contents__heading">Stop playing landlord.</h2>
+          <p class="marketing-feature-bubble__contents__description">No more tracking down checks every month. Accept recurring monthly or one-time credit card payments, and keep track of it all through Desktime.</p>
+        </div>
+
+        <div class="marketing-feature-control marketing-feature-control--prev js-feature-control js-feature-prev " data-direction="prev">
+  <div class="marketing-feature-control__circle js-feature-control-circle"></div>
+  <div class="marketing-feature-control__inner marketing-feature-control__inner--prev js-feature-control-arrow">
+    prev
+  </div>
+</div>
+        <div class="marketing-feature-control marketing-feature-control--next js-feature-control js-feature-next " data-direction="next">
+  <div class="marketing-feature-control__circle js-feature-control-circle"></div>
+  <div class="marketing-feature-control__inner marketing-feature-control__inner--next js-feature-control-arrow">
+    next
+  </div>
+</div>
+      </div>
+    </div>
+
+    <div class="l-marketing-payments__right">
+      <div class="marketing-ipad js-anim-payments-ipad">
+
+        <div class="marketing-ipad__contents js-payments-slider">
+          <ul>
+            <li>
+              <span data-picture data-alt="Invited members provide their credit card details when accepting their invitation.">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/invitation-01-11c8c5696d20ef9b6392a74ce0b0cb91.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Invitation-01" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/invitation-01-11c8c5696d20ef9b6392a74ce0b0cb91.png" />
+  </noscript>
+</span>
+
+              <div class="popover is-on-top is-visible">
+                <div class="popover__inner">
+                  <div class="popover__close">Close Popover</div>
+                  <div class="popover__stem"></div>
+                  <p>This is some sample copy, but popovers can contain just about any kind of content.</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <span data-picture data-alt="Keep better track of finances, payment issues, and refunds with Desktime&#x27;s payment history.">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/payments-01-e30ae93fdf0e2732ab12454e0c0cef62.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Payments-01" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/payments-01-e30ae93fdf0e2732ab12454e0c0cef62.png" />
+  </noscript>
+</span>
+            </li>
+          </ul>
+        </div>
+        <img alt="Marketing-ipad" class="marketing-ipad__chrome" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/marketing-ipad-4990416eb7adf407bf7f91520fd91e2e.png" />
+      </div>
+    </div>
+  </div>
+    
+</section>
+
+  <section id="booking" class="l-marketing-feature l-marketing-booking js-feature js-feature-booking" data-url-path="features/booking">
+
+  <nav class="marketing-feature-nav marketing-feature-nav--dark">
+    <a href="#payments" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Payments</span></a>
+    <a href="#booking" class="marketing-feature-nav__item is-current js-scroll-link"><span class="marketing-feature-nav__item__inner">Booking</span></a>
+    <a href="#members" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Members</span></a>
+    <a href="#directory" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Directory</span></a>
+  </nav>
+
+  <div class="l-marketing-feature__frame">
+
+    <div class="l-marketing-booking__main">
+      <h1 class="marketing-feature-heading marketing-feature-heading--large">
+        Everything in one place.
+      </h1>
+      <div class="marketing-desktop js-booking-slider">
+        <ul>
+          <li class="marketing-desktop__slide">
+            <div class="marketing-desktop__slide__browser marketing-desktop__slide__browser--01 js-anim-booking-browser"></div>
+            <div class="marketing-desktop__slide__browser marketing-desktop__slide__browser--03 js-anim-booking-browser"></div>
+            <div class="marketing-desktop__slide__browser marketing-desktop__slide__browser--02 js-anim-booking-browser"></div>
+            <div class="marketing-desktop__slide__browser marketing-desktop__slide__browser--screenshot js-anim-booking-initial-screenshot">
+              <figure>
+              <span data-picture data-alt="Monthly Booking Schedule">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/booking-03-b848e18b0a1acf7212b297f66651bfaa.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Booking-03" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/booking-03-b848e18b0a1acf7212b297f66651bfaa.png" />
+  </noscript>
+</span>
+              </figure>
+            </div>
+          </li>
+          <li class="marketing-desktop__slide">
+            <div class="marketing-desktop__slide__browser marketing-desktop__slide__browser--screenshot">
+              <figure>
+              <span data-picture data-alt="Sent Invitation">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/booking-04-da4fe9ff2014891f4933fd0e8214ee05.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Booking-04" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/booking-04-da4fe9ff2014891f4933fd0e8214ee05.png" />
+  </noscript>
+</span>
+              </figure>
+            </div>
+          </li>
+          <li class="marketing-desktop__slide">
+            <div class="marketing-desktop__slide__browser marketing-desktop__slide__browser--screenshot">
+              <figure>
+              <span data-picture data-alt="Active Members">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/booking-01-b91a6038a3ac9c0b31bcfff5618693c5.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Booking-01" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/booking-01-b91a6038a3ac9c0b31bcfff5618693c5.png" />
+  </noscript>
+</span>
+              </figure>
+            </div>
+          </li>
+          <li class="marketing-desktop__slide">
+            <div class="marketing-desktop__slide__browser marketing-desktop__slide__browser--screenshot">
+              <figure>
+              <span data-picture data-alt="Inviting a new Member">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/booking-02-44661fbdbc25a55b22f82027335b8207.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Booking-02" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/booking-02-44661fbdbc25a55b22f82027335b8207.png" />
+  </noscript>
+</span>
+              </figure>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="marketing-feature-bubble marketing-feature-bubble--dark">
+        <div class="marketing-feature-bubble__contents">
+          <h2 class="marketing-feature-bubble__contents__heading">Relax. It’s all in Desktime.</h2>
+          <p class="marketing-feature-bubble__contents__description">One app to handle every aspect of booking. Always know who’s in your space, what resources are available, and what needs your attention.</p>
+        </div>
+
+        <div class="marketing-feature-control marketing-feature-control--prev js-feature-control js-feature-prev " data-direction="prev">
+  <div class="marketing-feature-control__circle js-feature-control-circle"></div>
+  <div class="marketing-feature-control__inner marketing-feature-control__inner--prev js-feature-control-arrow">
+    prev
+  </div>
+</div>
+        <div class="marketing-feature-control marketing-feature-control--next js-feature-control js-feature-next " data-direction="next">
+  <div class="marketing-feature-control__circle js-feature-control-circle"></div>
+  <div class="marketing-feature-control__inner marketing-feature-control__inner--next js-feature-control-arrow">
+    next
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section id="members" class="l-marketing-feature l-marketing-members js-feature js-feature-members" data-url-path="features/members">
+
+  <nav class="marketing-feature-nav marketing-feature-nav--dark">
+    <a href="#payments" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Payments</span></a>
+    <a href="#booking" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Booking</span></a>
+    <a href="#members" class="marketing-feature-nav__item is-current js-scroll-link"><span class="marketing-feature-nav__item__inner">Members</span></a>
+    <a href="#directory" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Directory</span></a>
+  </nav>
+
+  <div class="l-marketing-feature__frame">
+    <div class="l-marketing-members__main">
+      <h1 class="marketing-feature-heading marketing-feature-heading--large">
+        Members at the center.
+      </h1>
+    </div>
+    
+    <div class="l-marketing-members__step js-anim-members-step">
+      <div class="marketing-sub-heading"><p>Your members are your space, and Desktime gives them a place online to meet their coworkers, manage their payments, and keep track of their current and upcoming bookings.</p>
+  <div class="marketing-feature-control marketing-feature-control--next js-feature-control js-feature-next marketing-feature-control--small" data-direction="next">
+  <div class="marketing-feature-control__circle js-feature-control-circle"></div>
+  <div class="marketing-feature-control__inner marketing-feature-control__inner--next js-feature-control-arrow">
+    next
+  </div>
+</div>
+</div>
+
+<div class="l-marketing-members__members">
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+      <span data-picture data-alt="Member Avatar">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-05-d69c740c4c0d3e86c8230228cd718dad.jpg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Avatar-05" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-05-d69c740c4c0d3e86c8230228cd718dad.jpg" />
+  </noscript>
+</span>
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">Elan Rothgarten</h2>
+      <h3 class="member__details__organization">Saffron Studio</h3>
+  </div>
+
+</div>
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+      <span data-picture data-alt="Member Avatar">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-12-87caccdb0704a5d04018ba13fdf50511.jpg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Avatar-12" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-12-87caccdb0704a5d04018ba13fdf50511.jpg" />
+  </noscript>
+</span>
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">Elizabeth Smith</h2>
+      <h3 class="member__details__organization">Creative Space</h3>
+  </div>
+
+    <div class="l-marketing-members__main__popover js-anim-members-popover">
+      <span data-picture data-alt="Members can learn more about each other with profiles.">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/member-profile-popover-e7d2ae683738a2032e5fb49d14b4e77c.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Member-profile-popover" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/member-profile-popover-e7d2ae683738a2032e5fb49d14b4e77c.png" />
+  </noscript>
+</span>
+    </div>
+
+    <div class="marketing-touch-symbol js-anim-members-touch"></div>
+</div>
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">James Duncan</h2>
+  </div>
+
+</div>
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+      <span data-picture data-alt="Member Avatar">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-03-a272fa79ad0d0d65720523952d020b59.jpg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Avatar-03" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-03-a272fa79ad0d0d65720523952d020b59.jpg" />
+  </noscript>
+</span>
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">Kelly Jordan</h2>
+      <h3 class="member__details__organization">Merill Publishing</h3>
+  </div>
+
+</div>
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+      <span data-picture data-alt="Member Avatar">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-09-5f37efd9f182abd007f923db9afc9f52.jpg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Avatar-09" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-09-5f37efd9f182abd007f923db9afc9f52.jpg" />
+  </noscript>
+</span>
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">April Baumbach</h2>
+      <h3 class="member__details__organization">Element Dev</h3>
+  </div>
+
+</div>
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">Jonathan Driscoll</h2>
+  </div>
+
+</div>
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+      <span data-picture data-alt="Member Avatar">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-07-0d1a32f90792bccf28e982acb6503322.jpg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Avatar-07" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-07-0d1a32f90792bccf28e982acb6503322.jpg" />
+  </noscript>
+</span>
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">Whiskers McGoo</h2>
+      <h3 class="member__details__organization">Desktime</h3>
+  </div>
+
+</div>
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+      <span data-picture data-alt="Member Avatar">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-08-20e65a2a6b0ea61df27d157411be9b6f.jpg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Avatar-08" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-08-20e65a2a6b0ea61df27d157411be9b6f.jpg" />
+  </noscript>
+</span>
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">Dave Jenkins</h2>
+      <h3 class="member__details__organization">Three Design Company</h3>
+  </div>
+
+</div>
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">Joshua Gardner</h2>
+      <h3 class="member__details__organization">Chop Shop</h3>
+  </div>
+
+</div>
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+      <span data-picture data-alt="Member Avatar">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-04-f82cb0a7036ee2d8dbd47e495bb8ff0c.jpg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Avatar-04" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-04-f82cb0a7036ee2d8dbd47e495bb8ff0c.jpg" />
+  </noscript>
+</span>
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">Davis Harding</h2>
+      <h3 class="member__details__organization">Elevative PR</h3>
+  </div>
+
+</div>
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">Monica Green</h2>
+      <h3 class="member__details__organization">Chicago Outdoor</h3>
+  </div>
+
+</div>
+  <div class="member js-anim-members-member">
+  <figure class="avatar avatar--medium">
+      <span data-picture data-alt="Member Avatar">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-11-0df482d1ea6ff5f09f2e02716b362690.jpg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Avatar-11" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/avatars/avatar-11-0df482d1ea6ff5f09f2e02716b362690.jpg" />
+  </noscript>
+</span>
+  </figure>
+  <div class="member__details">
+    <h2 class="member__details__name">Emile Sedgewick</h2>
+      <h3 class="member__details__organization">Freelance Writer</h3>
+  </div>
+
+</div>
+</div>
+    </div>
+    
+    <div class="l-marketing-members__step js-anim-members-step">
+      <div class="marketing-sub-heading"><p>Desktime makes your members feel at home from the moment they join your space. And by giving them control over their booking and payment details, you’ll have less to deal with.</p>
+  <div class="marketing-feature-control marketing-feature-control--prev js-feature-control js-feature-prev marketing-feature-control--small" data-direction="prev">
+  <div class="marketing-feature-control__circle js-feature-control-circle"></div>
+  <div class="marketing-feature-control__inner marketing-feature-control__inner--prev js-feature-control-arrow">
+    prev
+  </div>
+</div>
+</div>
+
+<div class="l-marketing-members-browsers">
+  <div class="marketing-wireframe-browser marketing-wireframe-browser--minor marketing-wireframe-browser--minor--left js-anim-members-small-browser">
+    <figure class="marketing-wireframe-browser__image">
+      <span data-picture data-alt="Members can view their active and upcoming bookings.">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/small/members-02-ed2e3b75c308cff722bcadec5c3ac696.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Members-02" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/small/members-02-ed2e3b75c308cff722bcadec5c3ac696.png" />
+  </noscript>
+</span>
+    </figure>
+  </div>
+  <div class="marketing-wireframe-browser marketing-wireframe-browser--major">
+    <figure class="marketing-wireframe-browser__image">
+      <img alt="Creating a member Profile" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/small/members-01-87247b5d16179497b22088eb89554288.png" />
+    </figure>
+  </div>
+  <div class="marketing-wireframe-browser marketing-wireframe-browser--minor marketing-wireframe-browser--minor--right js-anim-members-small-browser">
+    <figure class="marketing-wireframe-browser__image">
+      <span data-picture data-alt="Your members have a full payment history.">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/small/members-03-63387182581299246222fbd07ba17b27.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Members-03" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/screenshots/small/members-03-63387182581299246222fbd07ba17b27.png" />
+  </noscript>
+</span>
+    </figure>
+  </div>
+</div>
+    </div>
+
+  </div>
+</section>
+
+  <section id="directory" class="l-marketing-feature l-marketing-directory js-feature js-feature-directory" data-url-path="features/directory">
+
+  <nav class="marketing-feature-nav marketing-feature-nav--dark">
+    <a href="#payments" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Payments</span></a>
+    <a href="#booking" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Booking</span></a>
+    <a href="#members" class="marketing-feature-nav__item js-scroll-link"><span class="marketing-feature-nav__item__inner">Members</span></a>
+    <a href="#directory" class="marketing-feature-nav__item is-current js-scroll-link"><span class="marketing-feature-nav__item__inner">Directory</span></a>
+  </nav>
+
+  <div class="l-marketing-feature__frame">
+    <div class="l-marketing-directory__main">
+      <h1 class="marketing-feature-heading">
+        Attract new members with<br /> the Desktime Directory.
+      </h1>
+      
+      <div class="l-marketing-directory__step js-anim-directory-step">
+        <div class="marketing-directory-reticles js-anim-directory-reticles">
+          <p class="marketing-directory-reticles__them js-anim-directory-reticle-caption">They’re Here</p>
+          <p class="marketing-directory-reticles__you js-anim-directory-reticle-caption">You’re Here</p>
+        </div>
+
+        <div class="marketing-feature-bubble marketing-feature-bubble--big">
+          <div class="marketing-feature-bubble__contents">
+            <h2 class="marketing-feature-bubble__contents__heading">Built-in promotion.</h2>
+            <p class="marketing-feature-bubble__contents__description">Reach potential members with a listing in the Desktime Directory, our collection of shared workspaces around the world. Your listing and any leads that come from it are free. <a href="/directory" target="_blank">View the Directory</a></p>
+          </div>
+          <div class="marketing-feature-control marketing-feature-control--next js-feature-control js-feature-next " data-direction="next">
+  <div class="marketing-feature-control__circle js-feature-control-circle"></div>
+  <div class="marketing-feature-control__inner marketing-feature-control__inner--next js-feature-control-arrow">
+    next
+  </div>
+</div>
+        </div>
+      </div>
+
+      <div class="l-marketing-directory__step l-marketing-directory__step--2 js-anim-directory-step">
+
+        <div class="marketing-directory-connect">
+          <div class="marketing-directory-connect__line marketing-directory-connect__line--1 js-anim-directory-line-1"></div>
+          <div class="marketing-directory-connect__line marketing-directory-connect__line--2 js-anim-directory-line-2"></div>
+          <div class="marketing-directory-connect__hub js-anim-directory-hub"></div>
+        </div>
+        
+        <div class="marketing-directory-iphone js-anim-directory-phone-1">
+          <div class="marketing-popover js-anim-directory-popover-1">
+            <p class="marketing-popover__content">Potential renters find and contact you through the Desktime Directory.</p>
+          </div>
+
+          <div class="marketing-directory-iphone__chrome">
+            <span data-picture data-alt="Phone">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/directory/iphone-bg-white-4e38df7b15df37cd76c106c8a1f37028.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Iphone-bg-white" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/directory/iphone-bg-white-4e38df7b15df37cd76c106c8a1f37028.png" />
+  </noscript>
+</span>
+          </div>
+          <div class="marketing-directory-iphone__display js-anim-directory-search-display">
+            <span data-picture data-alt="Listing of spaces in the Desktime Directory">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/directory/directory-search-screenshot-256996d26991904a4b01de62cb875d8a.jpg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Directory-search-screenshot" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/directory/directory-search-screenshot-256996d26991904a4b01de62cb875d8a.jpg" />
+  </noscript>
+</span>
+          </div>
+        </div>
+
+        <div class="marketing-directory-iphone marketing-directory-iphone--black js-anim-directory-phone-2">
+          <div class="marketing-popover marketing-popover--light js-anim-directory-popover-2">
+            <p class="marketing-popover__content">Inquiries arrive in your email inbox and Desktime for you to review and reply to.</p>
+          </div>
+
+          <div class="marketing-directory-iphone__chrome">
+            <span data-picture data-alt="Phone">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/directory/iphone-bg-black-c241914bde806231e5c339c97b519fd9.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Iphone-bg-black" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/directory/iphone-bg-black-c241914bde806231e5c339c97b519fd9.png" />
+  </noscript>
+</span>
+          </div>
+          <div class="marketing-directory-iphone__display js-anim-directory-manage-display-1">
+            <span data-picture data-alt="Managing inquiries with Desktime">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/directory/manage-messages-screenshot-9c942b8157b3fd4b0387807490e594f4.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Manage-messages-screenshot" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/directory/manage-messages-screenshot-9c942b8157b3fd4b0387807490e594f4.png" />
+  </noscript>
+</span>
+          </div>
+          <div class="marketing-directory-iphone__display js-anim-directory-manage-display-2">
+            <span data-picture data-alt="Managing inquiries with Desktime">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/directory/manage-messages-detail-screenshot-90ce08b9f2bf489c36ded75d53522c4a.png" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Manage-messages-detail-screenshot" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/directory/manage-messages-detail-screenshot-90ce08b9f2bf489c36ded75d53522c4a.png" />
+  </noscript>
+</span>
+          </div>
+
+          <div class="marketing-touch-symbol js-anim-directory-touch"></div>
+        </div>
+        <div class="marketing-feature-control marketing-feature-control--prev js-feature-control js-feature-prev " data-direction="prev">
+  <div class="marketing-feature-control__circle js-feature-control-circle"></div>
+  <div class="marketing-feature-control__inner marketing-feature-control__inner--prev js-feature-control-arrow">
+    prev
+  </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <section class="l-marketing-pricing">
+  
+  <div class="l-marketing-pricing__main">
+    <h1 class="marketing-heading-strong">Simple Pricing.</h1>
+
+    <div class="marketing-pricing-bubble">
+      <p class="marketing-pricing-bubble__description"><span class="marketing-pricing-bubble__description__percentage">2.5%</span><span class="marketing-pricing-bubble__description__subtext">of payments made to your space through Desktime.</span></p>
+    </div>
+  
+    <div class="l-marketing-pricing__main__explanations">
+      <p class="marketing-pricing-explanation marketing-pricing-explanation--left"><strong> We’re in this together.</strong> We don’t make any money unless you do. So we make Desktime great at making you money.</p>
+      
+      <div class="l-marketing-pricing__main__explanations__right">
+        <p class="marketing-pricing-explanation marketing-pricing-explanation--right"><strong>It’s all out there.</strong> No monthly fees, your members pay nothing, and you’ll always know exactly how much of your money is going to Desktime.</p>
+
+        <p class="marketing-pricing-explanation marketing-pricing-explanation--right"><strong>Quit at any time.</strong> No contract required. Try Desktime for a day or many years. Of course, we’ll do our best to keep you around.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="marketing-pricing-stripe">
+    <h2 class="marketing-pricing-stripe__logo">Stripe</h2>
+    <p>Desktime uses Stripe for easy, secure credit card transactions. Desktime fees do not include <a href="https://stripe.com/us/help/pricing" target="_blank">card processing fees</a> charged by Stripe.</p>
+  </div>
+</section>
+
+  <section class="l-marketing-customers">
+  
+  <h1 class="marketing-heading-strong">Trusted by spaces.</h1>
+  
+  <div class="l-marketing-customers__quotes">
+    <div class="marketing-quote">
+      <figure class="marketing-quote__logo">
+        <a href="http://www.1871.com/" target="_blank">
+          <img alt="Space-logos_1871" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_1871-356b31f1237ed964cb7fdb7420cf8e90.svg" />
+</a>      </figure>
+      <div class="marketing-quote__content">
+        <p class="marketing-quote__content__quote">
+          “Desktime allows us to schedule and bill hundreds of new and recurring payments each month, allowing us to spend more time with our members.”
+        </p>
+        <p class="marketing-quote__content__details">
+          1871 <span>/</span> Chicago, IL
+        </p>
+      </div>
+    </div>
+    
+    <div class="marketing-quote">
+      <figure class="marketing-quote__logo">
+        <a href="http://www.enerspacecoworking.com/" target="_blank">
+          <img alt="Space-logos_enerspace" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_enerspace-88c139a0ebbc4118b0e042ae85f6b827.svg" />
+</a>      </figure>
+      <div class="marketing-quote__content">
+        <p class="marketing-quote__content__quote">
+          “Desktime handles everything I need to get a new member set up, and then it automates the payment process so that I don't have to think about it.”
+        </p>
+        <p class="marketing-quote__content__details">
+          Enerspace <span>/</span> Chicago, IL
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div class="l-marketing-customers__spaces">
+    <h2 class="marketing-arrow-subhead"><span>A few spaces using Desktime</span></h2>
+
+    <div class="l-marketing-customers__spaces__logos">
+
+      <a href="http://bullcitycoworking.com/" target="_blank">
+        <span data-picture data-alt="Bull City Coworking">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_bull-city-coworking-06fc8ff0735ae8525e3cf5c05ff3280c.svg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Space-logos_bull-city-coworking" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_bull-city-coworking-06fc8ff0735ae8525e3cf5c05ff3280c.svg" />
+  </noscript>
+</span>
+</a>
+      <a href="http://thepostfamily.com/" target="_blank">
+        <span data-picture data-alt="Post Family">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_post-family-af4abad3fc03da00a106c59377e9f0d1.svg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Space-logos_post-family" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_post-family-af4abad3fc03da00a106c59377e9f0d1.svg" />
+  </noscript>
+</span>
+</a>
+      <a href="http://coworkchicago.com/" target="_blank">
+        <span data-picture data-alt="NextSpace River North">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_nextspace-722c082a5038d858641f910a91a18990.svg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Space-logos_nextspace" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_nextspace-722c082a5038d858641f910a91a18990.svg" />
+  </noscript>
+</span>
+</a>
+      <a href="http://makeshiftsociety.com/" target="_blank">
+        <span data-picture data-alt="Makeshift Society">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_makeshift-society-f7defd3877bd6b866930965000f579f8.svg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Space-logos_makeshift-society" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_makeshift-society-f7defd3877bd6b866930965000f579f8.svg" />
+  </noscript>
+</span>
+</a>
+      <a href="http://coworkbuffalo.com/" target="_blank">
+        <span data-picture data-alt="Cowork Buffalo">
+  <span data-src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_cowork-buffalo-cc47962cb1c9b4a254054b671fcf11d0.svg" data-media="(min-width: 655px)"></span>
+
+  <noscript>
+    <img alt="Space-logos_cowork-buffalo" src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing/spaces/space-logos_cowork-buffalo-cc47962cb1c9b4a254054b671fcf11d0.svg" />
+  </noscript>
+</span>
+</a>    </div>
+  </div>
+</section>
+
+  <section id="request-demo" class="l-marketing-signup" data-url-path="request-demo">
+  
+  <div class="l-marketing-signup__main">
+    <div class="marketing-signup-intro">
+      <h1 class="marketing-signup-intro__heading">Let’s get started.</h1>
+      <p class="marketing-signup-intro__description">We’ll help you setup your space and walk you through the entire Desktime experience. By the end of the  session you’ll be ready to use Desktime full-time.</p>
+    </div>
+  
+    <form class="marketing-signup-form" action="https://desktimeapp.createsend.com/t/y/s/cjuiyi/" method="post" novalidate="novalidate" data-validate="parsley">
+      <div class="marketing-signup-form__inputset">
+        <label for="fieldName">Your Name</label>
+        <input id="fieldName" name="cm-name" type="text" placeholder="Your full name" data-trigger="change" data-required="true" data-error-message="Please provide your full name." data-error-container=".js-validate-name-container" />
+      </div>
+      <div class="marketing-signup-form__inputset__error js-validate-name-container"></div>
+
+      <div class="marketing-signup-form__inputset">
+        <label for="fieldEmail">Your Email</label>
+        <input id="fieldEmail" name="cm-cjuiyi-cjuiyi" type="email" placeholder="you@yourmail.com" data-trigger="change" data-required="true" data-error-message="We need a valid email address to reach you at." data-error-container=".js-validate-email-container" />
+      </div>
+      <div class="marketing-signup-form__inputset__error js-validate-email-container"></div>
+      
+      <div class="marketing-signup-form__inputset">
+        <label for="fieldpodkd">Your Space</label>
+        <input id="fieldpodkd" name="cm-f-podkd" type="text" placeholder="Name of your space" />
+      </div>
+      <button class="marketing-signup-form__submit js-request-demo-form-submit" type="submit">Request Demo</button>
+    </form>
+  </div>
+</section>
+
+</div>
+
+
+  <footer class="l-app-footer js-app-footer">
+  <div class="nav-toggle nav-toggle--black nav-toggle--small js-footer-nav-toggle"><span class="translation_missing" title="translation missing: en.management.header.expand_or_collapse_nav">Expand Or Collapse Nav</span></div>
+
+  <nav class="nav-footer">
+    <h1 class="nav-footer__copyright">&copy; 2013 Desktime</h1>
+    <a href="/directory">Directory</a>
+    <a href="http://blog.desktimeapp.com/" target="_blank">Blog</a>
+<a href="/terms">Terms</a>
+<a href="/privacy">Privacy</a>
+
+    <a href="http://press.desktimeapp.com/" target="_blank">Press</a>
+  </nav>
+
+  <a href="http://support.desktimeapp.com" class="contact-support">Get Support</a>
+
+  <a href="https://twitter.com/desktimeapp" class="social-bubble social-bubble--twitter" target="_blank">Twitter</a>
+  <a href="https://www.facebook.com/desktimeapp" class="social-bubble social-bubble--facebook" target="_blank">Facebookkk</a>
+</footer>
+
+
+
+  
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.0/jquery.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+//<![CDATA[
+window.jQuery || document.write(unescape('%3Cscript src="https://desktime-production-assets.s3.amazonaws.com/assets/jquery-a6476dc65eb9dae7616b701d0a9a0346.js" type="text/javascript">%3C/script>'))
+//]]>
+</script>
+  <script src="https://desktime-production-assets.s3.amazonaws.com/assets/marketing-b5497c384f91f9fdc52234e79781f241.js" type="text/javascript"></script>
+  
+    <script src="https://maps-api-ssl.google.com/maps/api/js?sensor=false" type="text/javascript"></script>
+
+
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-1429854-73']);
+    _gaq.push(['_trackPageview']);
+   
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+
+<script type="text/javascript">if (typeof NREUMQ !== "undefined") { if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-1.newrelic.com","e5589056f7","12705","Il0NRkdYDw0HFElaABNZBkZcWQROCwgCUhk=",12,93,new Date().getTime(),"","","","",""]);}</script></body>
+</html>
